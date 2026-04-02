@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 68114650 วสวัตติ์ ศิรขจรเวโรจน์ 002 </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .red { background-color:  #ff9999; color: white; }
+        .green { background-color: #99d999; color: white; }
+        .blue { background-color: #3399ff; color: white; }
+
+        .btn:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>JavaScript Basic</h1>
+    <p>ตัวอย่างการใช้งาน JavaScript และ CSS</p>
+
+    <div class="image-grid">
+        <img src="rollover/1.jpg" alt="img1">
+        <img src="rollover/2.jpg" alt="img2">
+        <img src="rollover/3.jpg" alt="img3">
+        <img src="rollover/4.jpg" alt="img4">
+    </div>
+
+    <button class="btn red" onclick="changeBg('red')">Red</button>
+    <button class="btn green" onclick="changeBg('green')">Green</button>
+    <button class="btn blue" onclick="changeBg('blue')">Blue</button>
+</div>
+
+<script>
+    function changeBg(color) {
+        document.body.style.backgroundColor = color;
+        alert('เปลี่ยนสีเป็น ' + color);
+    }
+</script>
+
+</body>
+</html>
